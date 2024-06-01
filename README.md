@@ -31,12 +31,15 @@ pywin32
  
 # 使用说明
  
- 
+ ![image](https://github.com/yuyunmi/cbjq-yx/assets/120000886/611a0974-ac0f-4c48-83b1-0dfcf94620e4)
+
  
 # 版本内容更新
 
-研析小助手 v1.0.0: 
+研析小助手 v1.0.0:  
+
   1.可视化界面实现
   2.打包版本已发布
- 
+
+鸣谢：[cnocr](https://github.com/shiwen1234/cnocr)
  
