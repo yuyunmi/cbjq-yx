@@ -1,6 +1,6 @@
 from win32gui import *
-from PIL import ImageGrab
 import win32con
+from PIL import ImageGrab
 
 
 def get_frame():

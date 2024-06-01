@@ -2,7 +2,7 @@ import cv2
 
 from ocr import ocr
 
-
+# 切割碎片部分图片
 def get_num():
     image = cv2.imread('./cache.png')
 
@@ -24,9 +24,10 @@ def get_num():
     return values
 
 
+# 切割矩阵图片
 def get_matrix_pic():
 
-    image = cv2.imread('./cache.png')
+    image = cv2.imread('./cache.png', cv2.IMREAD_GRAYSCALE)
     image0 = image[242:788, 561:1217]
 
     return image0

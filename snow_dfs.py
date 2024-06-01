@@ -216,8 +216,7 @@ def get_dfs():
     arr = get_matrix()
 
     num = get_num()
-    # print(arr,num)
+    print(num)
     solutions = solve(arr, num)
     # print(solutions)
     return solutions
-

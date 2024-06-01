@@ -1,19 +1,18 @@
 from tkinter import messagebox
 from cnocr import CnOcr
 
-result_dict = {
-    1: 0,
-    2: 0,
-    3: 0,
-    4: 0,
-    5: 0,
-    6: 0,
-    7: 0,
-    8: 0,
-    9: 0,
-    10: 0,
-    11: 0
-}
+result_dict = {1: 0,
+               2: 0,
+               3: 0,
+               4: 0,
+               5: 0,
+               6: 0,
+               7: 0,
+               8: 0,
+               9: 0,
+               10: 0,
+               11: 0
+               }
 
 
 def ocr(img_list):
@@ -23,6 +22,7 @@ def ocr(img_list):
             # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
             out = ocr.ocr(img)
+            # print(out)
             list = []
             for x in out:
                 if x['text'].isdigit():

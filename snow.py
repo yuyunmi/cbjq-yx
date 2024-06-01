@@ -40,7 +40,7 @@ def create_button_grid():
         for j in range(columns):
 
             button = tk.Button(widget, text=str(matrixs[result_n][i][j]), bg=colors.get(matrixs[result_n][i][j]),
-                               width=50, height=50, command=lambda x=i, y=j: on_button_click(x, y, matrixs[result_n]))
+                               width=50, height=50)
             # 设置按钮的实际大小
             button.config(width=6, height=2)
             # 将按钮放置到网格中
@@ -50,19 +50,14 @@ def create_button_grid():
 
     return buttons
 
-
+# 更新下一方案
 def update(widget, buttons, matrix, colors):
     global result_n
     result_n += 1
     for i in range(5):
         for j in range(6):
             buttons[i][j] = tk.Button(widget, text=str(matrix[result_n][i][j]), bg=colors.get(matrix[i][j]),
-                                      width=50, height=50, command=lambda x=i, y=j: on_button_click(x, y, matrix))
-
-
-# 按钮点击事件处理函数
-def on_button_click(row, col, matrix):
-    print(f"按钮在第 {row + 1} 行，第 {col + 1} 列被点击，值为 {matrix[row][col]}")
+                                      width=50, height=50)
 
 
 def result_draw():
@@ -71,7 +66,7 @@ def result_draw():
     global result_n
     global image
 
-    result_n = 0
+    result_n = -1
 
     try:
         image = get_frame()
@@ -87,6 +82,7 @@ def result_draw():
 
         widget = tk.Tk()
         widget.title('QWQ')
+        widget.geometry('+200+200')
 
         create_button_grid()
 
@@ -105,7 +101,7 @@ def result_draw():
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('研析小工具')
-    root.geometry('230x50')
+    root.geometry('230x50+1200+200')
     # root.maxsize(230, 50)
     root.minsize(230, 50)
 
