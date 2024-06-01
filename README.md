@@ -31,7 +31,7 @@ pywin32
  
 # 使用说明
  
- ![image](https://github.com/yuyunmi/cbjq-yx/assets/120000886/611a0974-ac0f-4c48-83b1-0dfcf94620e4)
+![0a5f07a1bacc073dcae99b2126979d2e](https://github.com/yuyunmi/cbjq-yx/assets/120000886/82217646-12bf-4fd5-89b1-ad84a8244452)
 
  
 # 版本内容更新
